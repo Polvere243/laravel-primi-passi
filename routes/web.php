@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return 'Hello World';
+    $subject = 'by Classe 116';
+    return view('home', compact('subject'));
 });
